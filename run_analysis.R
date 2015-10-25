@@ -1,3 +1,22 @@
+## Getting and Cleaning Data - Course Project 2
+
+library(httr) 
+url <- "http://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+file <- "instancia.zip"
+if(!file.exists(file)){
+	print("No File. Downloading...")
+	download.file(url, file, method="curl")
+}
+
+#unzip and create folders (if those ain't exist)
+datafolder <- "UCI HAR Dataset"
+resultsfolder <- "results"
+if(!file.exists(datafolder)){
+	print("unzipping file")
+	unzip(file, list = FALSE, overwrite = TRUE)
+} 
+
+
 ## Read in the data from files
 # import features.txt
 features     = read.table('./features.txt',header=FALSE) 
