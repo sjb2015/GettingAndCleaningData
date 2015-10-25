@@ -1,3 +1,5 @@
+#CodeBook for Course Project 2 for the Johns Hopkin's Getting and Cleaning Data course at Coursera
+
 ##Description
 
 Additional information about the variables, data and transformations used in the course project for the Johns Hopkins Getting and Cleaning Data course.
